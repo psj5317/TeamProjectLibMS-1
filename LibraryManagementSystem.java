@@ -28,13 +28,16 @@ public class LibraryManagementSystem
     } 
 
     /**
-     * 책을 등록하는 메소드 
+     * 도서 객체를 생성해서 등록하는 메소드 
      *
      * @param  도서의 ID,도서 제목,도서 저자
      * 
      */
-    public void registerBook(String bookID,String title,String author)
-    {
+    public void registerBook(String bookID,String title,String author){ 
+        if(bookDB.findElement(bookID) != null){
+            System.out.println("이미 등록된 책: " + bookID);
+        } 
+        bookDB.addElement(new Book(bookID,title,author));
         
     }
 
