@@ -7,8 +7,8 @@
  */
 public class User
 {
-    
-    private int x;
+    private String name;
+    private Integer stID;
 
     /**
      * User 클래스의 객체 생성자
