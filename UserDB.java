@@ -9,10 +9,10 @@ public class UserDB
 {
 
     /**
-     * 예제 메소드 - 이 주석을 사용자에 맞게 바꾸십시오
+     * 이용자를 찾는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 더하기 y의 결과값을 반환
+     * @param  stID : 찾을 이용자의 학번
+     * @return    찾은 이용자
      */
     public User search(String stID)
     {

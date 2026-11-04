@@ -9,10 +9,10 @@ public class BookDB
 {   
     
     /**
-     * 예제 메소드 - 이 주석을 사용자에 맞게 바꾸십시오
+     * 책 찾는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 더하기 y의 결과값을 반환
+     * @param    bookID : 찾을 책 아이다
+     * @return   찾은 책
      */
     public Book search(String bookID)
     {
@@ -29,10 +29,9 @@ public class BookDB
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * 책을 bookDB에 추가하는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @param  book : 데이터베이스에 추가할 책
      */
     public void addBook(Book book)
     {
