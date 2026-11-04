@@ -14,4 +14,5 @@ public abstract class DB_Element
      * @return    x 와 y의 합
      */
     public abstract String getID();
+    public abstract boolean check();
 }
