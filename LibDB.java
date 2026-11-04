@@ -7,7 +7,6 @@ import java.util.*;
  */
 public class LibDB <T>
 {
-    // 인스턴스 변수 - 다음의 예제를 사용자에 맞게 변경하세요.
     private ArrayList<T> db;
 
     /**
@@ -26,7 +25,7 @@ public class LibDB <T>
      */
     public void addElement(T item)
     {
-        
+        db.add(item);
     }
     
     /**
@@ -37,7 +36,14 @@ public class LibDB <T>
      */
     public T findElement(String id)
     {
-        
+        Iterator it = db.iterator();
+        while(it.hasNext()){
+            DB_Element item = (DB_Element) it.next();
+            if(item.getID().equals(id)){
+                return (T) item;
+            }
+        }
+        return null;
     }
     
     /**
@@ -48,6 +54,8 @@ public class LibDB <T>
      */
     public void printAllElement()
     {
-        
+        for(T item:db){
+            System.out.println(item);
+        }
     }
 }

@@ -5,7 +5,7 @@
  * @author (2023320012 강성하,202332010박성준,202332029정지후,202332006정준영)
  * @version (2026/11/03)
  */
-public class User
+public class User extends DB_Element
 {
     private String name;
     private Integer stID;
@@ -13,10 +13,10 @@ public class User
     /**
      * User 클래스의 객체 생성자
      */
-    public User()
+    public User(int stID, String name)
     {
-        // 인스턴스 변수 초기화
-        x = 0;
+        this.stID = stID;
+        this.name = name;
     }
 
     /**
@@ -25,9 +25,20 @@ public class User
      * @param  y  메소드의 샘플 파라미터
      * @return    x 더하기 y의 결과값을 반환
      */
-    public int sampleMethod(int y)
+    public String getID()
     {
-        // 여기에 코드를 작성하세요.
-        return x + y;
+        return String.valueOf(stID);
     }
+
+    /**
+     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     *
+     * @param  y  메소드의 샘플 파라미터
+     * @return    x 와 y의 합
+     */
+    public String toString()
+    {
+        return " ";
+    }
+
 }
