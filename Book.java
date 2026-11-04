@@ -6,7 +6,7 @@
  * @author (2023320012 강성하,202332010박성준,202332029정지후,202332006정준영)
  * @version (2026/11/03)
  */
-public class Book extends DB_Element
+public class Book
 {
     private String author;
     private String bookID;
@@ -23,37 +23,21 @@ public class Book extends DB_Element
     }
 
     /**
-     * 대출 작업을 수행하는 메소드 
+     * Book 객체를 출력하는 메소드
      *
-     * @param  
-     * 
      */
-    public String getID()
+    public void display()
     {
-        return bookID;
+        
     }
 
     /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
+     * 책이 대출 가능한지 알려주는 메소드
      *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
-     */
-    public String toString()
-    {
-        return " ";
-    }
-
-    /**
-     * 메소드 예제 - 사용자에 맞게 주석을 바꾸십시오.
-     *
-     * @param  y  메소드의 샘플 파라미터
-     * @return    x 와 y의 합
+     * @return  책이 대출 가능하지 않으면 false
      */
     public boolean check()
     {
         
     }
-
-
 }
