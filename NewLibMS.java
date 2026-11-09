@@ -18,7 +18,7 @@ public class NewLibMS
      */
     public void borrowBook(String userID,String bookID)
     {
-        
+        Book book = bookDB.search(bookID);
     } 
 
     /**
