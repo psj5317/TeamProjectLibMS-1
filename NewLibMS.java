@@ -10,6 +10,7 @@ public class NewLibMS
 {
     public String SMLibrary;
     
+    
     /**
      * 책을 빌리는 메소드
      *
@@ -20,7 +21,7 @@ public class NewLibMS
     {
         Book book = bookDB.search(bookID);
     } 
-
+    
     /**
      * 책을 등록하는 메소드
      *
@@ -41,5 +42,4 @@ public class NewLibMS
     {
         
     }
-
 }
