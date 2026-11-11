@@ -11,7 +11,7 @@ public class Book
     private String author;
     private String bookID;
     private String title;
-
+    Loan loan;
     /**
      * Book 클래스의 객체 생성자
      */
@@ -20,6 +20,7 @@ public class Book
         this.bookID = bookID;
         this.title = title;
         this.author = author;
+        loan.book = this;
     }
 
     /**

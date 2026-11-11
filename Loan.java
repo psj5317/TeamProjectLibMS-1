@@ -8,11 +8,11 @@ import java.time.LocalDate;
  */
 public class Loan
 {
-    private Book book;
-    private User user;
+    Book book;
+    User user;
     private LocalDate dueDate;
     private LocalDate loanDate;
-
+    
     /**
      * Loan 클래스의 객체 생성자
      */
@@ -22,6 +22,7 @@ public class Loan
         this.book = book;
         this.loanDate = loanDate.now();
         this.dueDate = loanDate.plusDays(15);
+        book.loan = this;
     }
 
     /**

@@ -9,7 +9,7 @@ public class User
 {
     private String name;
     private String stID;
-
+    Loan loan;
     /**
      * User 클래스의 객체 생성자
      */
@@ -17,6 +17,7 @@ public class User
     {
         this.stID = stID;
         this.name = name;
+        loan.user = this;
     }
 
     /**
