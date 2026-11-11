@@ -4,7 +4,7 @@
  *
  *
  * @author (2023320012 강성하,202332010박성준,202332029정지후,202332006정준영)
- * @version (2026/11/03)
+ * @version (2026/11/09)
  */
 public class Book
 {
@@ -34,7 +34,7 @@ public class Book
     /**
      * 책이 대출 가능한지 알려주는 메소드
      *
-     * @return  책이 대출 가능하지 않으면 false
+     * @return  boolean : 책이 대출 가능하다면 true 그렇지 않다면 false
      */
     public boolean check()
     {
